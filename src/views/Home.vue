@@ -5,11 +5,17 @@
       <h1>Glarce</h1>
       <p>Web AR, simplified</p>
     </div>
+
+    <div class="wave"></div>
   </header>
 
   <div class="features">
-    <div>
+    <div class="feature" id="web">
+      <h2>Web based</h2>
 
+      <p>Desigend and made on the web, for the web</p>
+      <p>Available on everything with connecton</p>
+      <p><a class="borderMarker" href="https://glarce.github.io/Glarce/">Try it out right now, here in the browser!</a></p>
     </div>
   </div>
 </div>
@@ -29,18 +35,28 @@ export default
 </script>
 
 <style scoped lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Overpass');
 
 header {
-    height: 102vh;
+    height: 100vh;
     background: rgb(42,250,223);
     background: linear-gradient(210deg, rgba(42,250,223,1) 0%, rgba(76,131,255,1) 100%);
 
     color: #eee;
-    font-family: 'Quicksand', sans-serif;
 
-    border-bottom-left-radius: 50% 2vh;
-    border-bottom-right-radius: 50% 2vh;
+    font-family: 'Overpass', sans-serif !important;
+
+    .wave {
+        background-image: url("../assets/white-split.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        position: absolute;
+        bottom: -1px;
+
+        height: 10%;
+        width: 100%;
+    }
 
     .text {
         position: absolute;
@@ -59,7 +75,28 @@ header {
     }
 }
 
-.features {
-  height: 100vh;
+.features {}
+
+.borderMarker {
+    position: relative;
+
+    color: black;
+    text-decoration: none;
+}
+
+.borderMarker::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 70%;
+    left: -0.1px;
+    right: -0.1px;
+    bottom: 0;
+    transition: top 0.1s ease-in-out;
+    background-color: rgba(76,131,255, 0.5);
+}
+
+.borderMarker:hover::after {
+    top: 0;
 }
 </style>
