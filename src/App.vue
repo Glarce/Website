@@ -23,11 +23,15 @@ export default
 @import "./styles/vars";
 body {
     margin: 0;
+
+    overflow-x: hidden;
 }
 
 h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 60pt;
+    font-size: 50pt;
+
+    margin-top: 67px;
 
     color: $darkGrey;
 }

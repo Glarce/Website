@@ -13,9 +13,24 @@
     <div class="feature" id="web">
       <h2>Web based</h2>
 
-      <p>Desigend and made on the web, for the web</p>
-      <p>Available on everything with connecton</p>
-      <p><a class="borderMarker" href="https://glarce.github.io/Glarce/">Try it out right now, here in the browser!</a></p>
+      <div class="top">
+        <p>Designed and made on the web, for the web</p>
+        <img src="../assets/04.png">
+      </div>
+
+      <div class="middle">
+        <p>Available on everything with connection</p>
+        <img src="../assets/iphone-x.svg">
+      </div>
+
+      <div class="bottom">
+        <p><a class="borderMarker" href="https://glarce.github.io/Glarce/">Try it out right now, here in the browser!</a></p>
+        <img src="../assets/05.png">
+      </div>
+    </div>
+
+    <div class="feature" id="simple">
+      <h2>Simple Yet Powerful</h2>
     </div>
   </div>
 </div>
@@ -35,68 +50,5 @@ export default
 </script>
 
 <style scoped lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Overpass');
-
-header {
-    height: 100vh;
-    background: rgb(42,250,223);
-    background: linear-gradient(210deg, rgba(42,250,223,1) 0%, rgba(76,131,255,1) 100%);
-
-    color: #eee;
-
-    font-family: 'Overpass', sans-serif !important;
-
-    .wave {
-        background-image: url("../assets/white-split.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        position: absolute;
-        bottom: -1px;
-
-        height: 10%;
-        width: 100%;
-    }
-
-    .text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        h1 {
-            font-size: 96pt;
-            margin: 0;
-        }
-        p {
-            font-size: 20pt;
-            margin: 0;
-        }
-    }
-}
-
-.features {}
-
-.borderMarker {
-    position: relative;
-
-    color: black;
-    text-decoration: none;
-}
-
-.borderMarker::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 70%;
-    left: -0.1px;
-    right: -0.1px;
-    bottom: 0;
-    transition: top 0.1s ease-in-out;
-    background-color: rgba(76,131,255, 0.5);
-}
-
-.borderMarker:hover::after {
-    top: 0;
-}
+@import "../styles/home";
 </style>
