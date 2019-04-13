@@ -12,5 +12,19 @@ export default
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+nav {
+    padding: 10pt;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+a {
+    padding: 5pt;
+
+    color: #fff;
+    text-decoration: none;
+}
 </style>

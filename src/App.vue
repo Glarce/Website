@@ -1,18 +1,18 @@
 <template>
 <div id="app">
-  <nav />
+  <nav-bar />
   <router-view />
 </div>
 </template>
 
 <script>
-import Nav from './components/Nav.vue'
+import NavBar from './components/Nav.vue'
 
 export default
 {
 	components:
   {
-  	Nav
+  	NavBar
   }
 }
 </script>
@@ -27,13 +27,18 @@ body {
     overflow-x: hidden;
 }
 
+p {
+    font-size: 15pt;
+}
+
 h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 50pt;
 
     margin-top: 67px;
+    text-align: center;
 
-    color: $darkGrey;
+    color: #707070;
 }
 
 #app {

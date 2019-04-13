@@ -10,27 +10,26 @@
   </header>
 
   <div class="features">
-    <div class="feature" id="web">
-      <h2>Web based</h2>
-
-      <div class="top">
-        <p>Designed and made on the web, for the web</p>
-        <img src="../assets/04.png">
-      </div>
-
-      <div class="middle">
-        <p>Available on everything with connection</p>
-        <img src="../assets/iphone-x.svg">
-      </div>
-
-      <div class="bottom">
-        <p><a class="borderMarker" href="https://glarce.github.io/Glarce/">Try it out right now, here in the browser!</a></p>
-        <img src="../assets/05.png">
-      </div>
-    </div>
-
     <div class="feature" id="simple">
-      <h2>Simple Yet Powerful</h2>
+      <h2>Simple but Powerful</h2>
+
+      <div class="simpleFetures">
+        <div class="blob">
+          <span class="text"><p>Set up in minutes not hours</p></span>
+        </div>
+        <div class="blob two">
+          <span class="text"><p>Shields you from browser suport and low level code</p></span>
+        </div>
+        <div class="blob">
+          <span class="text"><p>Writen for the web</p></span>
+        </div>
+        <div class="blob two">
+          <span class="text"><p>Modular</p></span>
+        </div>
+        <div class="blob">
+          <span class="text"><p>Advanced 3D with a-frame</p></span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
