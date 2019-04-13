@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Overpass');
+@import url('https://fonts.googleapis.com/css?family=Overpass'); // -----------------------------------------------------------------------------
+// Header
+// -----------------------------------------------------------------------------
 
 header {
   height: 100vh;
-  background: rgb(42,250,223);
-  background: linear-gradient(210deg, rgba(42,250,223,1) 0%, rgba(76,131,255,1) 100%);
   color: #eee;
   font-family: 'Overpass', sans-serif !important;
+  position: relative;
 
   .wave {
     background-image: url("../assets/white-split.svg");
@@ -34,26 +35,32 @@ header {
     }
   }
 }
+// -----------------------------------------------------------------------------
+// Features
+// -----------------------------------------------------------------------------
+
+.features {
+  background-color: white;
+}
+// -----------------------------------------------------------------------------
+// Fisrt set of features
+// -----------------------------------------------------------------------------
 
 .simpleFetures {
   display: flex;
   justify-content: space-evenly;
-
-  height: 400px;
+  flex-wrap: wrap;
 
   .blob {
-    background-image: url('../assets/Blob.svg');
-
-    width: 200px;
-    height: 200px;
-
+    background-image: url("../assets/Blob.svg");
+    width: 220px;
+    height: 220px;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .text {
       padding: 20px;
-
       color: white;
     }
   }
@@ -62,29 +69,26 @@ header {
     margin-top: 200px;
   }
 }
-
-.features {
-  height: 100vh;
+@media only screen and (max-width: 439px) {
+  .two {
+    margin-top: 0 !important;
+  }
 }
 
-.borderMarker {
-  position: relative;
-  color: black;
-  text-decoration: none;
+.docs-grid {
+  display: grid;
+  grid-template-columns: auto auto;
 
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 70%;
-    left: -0.1px;
-    right: -0.1px;
-    bottom: 0;
-    transition: top 0.1s ease-in-out;
-    background-color: rgba(76,131,255, 0.5);
+  .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  &:hover::after {
-    top: 0;
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5px;
   }
 }

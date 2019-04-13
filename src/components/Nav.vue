@@ -1,14 +1,17 @@
 <template>
 <nav>
-  <router-link to="/">Home</router-link>
-  <router-link to="/about">About</router-link>
+  <a href="/Docs" class="link">Docs</a>
+  <a href="/Glarce" class="link">Demo</a>
+
+  <!-- <router-link to="/">Home</router-link>
+  <router-link to="/about">About</router-link> -->
 </nav>
 </template>
 
 <script>
 export default
 {
-	name: 'navbar'
+  name: 'navbar'
 }
 </script>
 
@@ -19,12 +22,20 @@ nav {
     position: absolute;
     left: 0;
     top: 0;
-}
 
-a {
-    padding: 5pt;
+    display: flex;
 
-    color: #fff;
-    text-decoration: none;
+    .link {
+        padding: 10px;
+
+        color: #fff;
+        text-decoration: none;
+
+        transition-duration: 0.1s;
+
+        &:hover {
+            color: #aaa;
+        }
+    }
 }
 </style>
