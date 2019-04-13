@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/js/about.41d636ee.js"
   },
   {
-    "revision": "3120c058aab3763e8b2c",
-    "url": "/css/app.09e563e3.css"
+    "revision": "6ff1b3ffcc49d3c2800a",
+    "url": "/css/app.973b87b4.css"
   },
   {
-    "revision": "3120c058aab3763e8b2c",
-    "url": "/js/app.d15a4165.js"
+    "revision": "6ff1b3ffcc49d3c2800a",
+    "url": "/js/app.79171e70.js"
   },
   {
     "revision": "d3a8d09733e250aad362",
@@ -20,11 +20,11 @@ self.__precacheManifest = [
     "url": "/img/white-split.f27a8334.svg"
   },
   {
-    "revision": "71ad7bed7d9ad5f3a8e578ed4684701a",
-    "url": "/img/iphone-x.71ad7bed.svg"
+    "revision": "b8d4290d1fcfab16c15491d05d9ef7da",
+    "url": "/img/Blob.b8d4290d.svg"
   },
   {
-    "revision": "d3f185bf98d5f0df404fd44916c9afab",
+    "revision": "19c24caef7b57a37e917fc693537e8e7",
     "url": "/index.html"
   },
   {
