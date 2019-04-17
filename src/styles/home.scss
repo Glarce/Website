@@ -39,8 +39,10 @@ header {
 // Features
 // -----------------------------------------------------------------------------
 
-.features {
+h2 {
   background-color: white;
+  color: black;
+  mix-blend-mode: screen;
 }
 // -----------------------------------------------------------------------------
 // Fisrt set of features
@@ -50,6 +52,8 @@ header {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  background-color: white;
+  mix-blend-mode: screen;
 
   .blob {
     background-image: url("../assets/Blob.svg");
@@ -83,6 +87,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    mix-blend-mode: screen;
   }
 
   .right {
@@ -90,5 +96,38 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     padding: 5px;
+    background-color: white;
+  }
+}
+
+#free {
+  p {
+    background-color: white;
+    mix-blend-mode: screen;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+}
+
+footer {
+  display: grid;
+  margin-top: -1px;
+
+  p {
+    color: white;
+  }
+
+  .wave {
+    background-image: url("../assets/white-split.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10vh;
+    width: 100%;
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
   }
 }

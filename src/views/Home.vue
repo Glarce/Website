@@ -51,21 +51,28 @@
         </div>
 
         <div class="right">
-          <a href="/Docs/guide/">
-            <card>
-              <a>Getting started</a>
-            </card>
-          </a>
-          <a href="/Docs/API/">
-            <card>
-              <a>API</a>
-            </card>
-          </a>
+          <card link="/Docs/guide/">
+            <span class="text">Getting started</span>
+          </card>
+          <card link="/Docs/API/">
+            <span class="text">API</span>
+          </card>
           <!-- <card><a>Deployment</a></card> -->
         </div>
       </div>
     </div>
+
+    <div class="feature" id="free">
+      <h2>Open Source and Free Forever</h2>
+      <p>Need I say anymore?</p>
+    </div>
   </div>
+
+  <footer>
+    <div class="wave"></div>
+
+    <p class="copywrite">GPL-3.0 Licensed | Copyright © 2019 Glarce</p>
+  </footer>
 </div>
 </template>
 
