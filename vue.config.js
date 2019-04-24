@@ -1,3 +1,9 @@
 module.exports = {
-  publicPath: '/Website/'
+  publicPath: '/Website/',
+  outputDir: undefined,
+  assetsDir: undefined,
+  runtimeCompiler: undefined,
+  productionSourceMap: false,
+  parallel: undefined,
+  css: undefined
 }
